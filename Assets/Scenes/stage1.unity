@@ -273,8 +273,9 @@ GameObject:
   - component: {fileID: 91642077}
   - component: {fileID: 91642076}
   - component: {fileID: 91642075}
+  - component: {fileID: 91642078}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: plate-elevator1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,10 +296,11 @@ MonoBehaviour:
   conditions: []
   actions:
   - {fileID: 91642075}
+  - {fileID: 91642078}
   exitActions:
   - {fileID: 91642077}
   - {fileID: 91642076}
-  holdTime: 3
+  holdTime: 0.5
   afterTrigger: 4
   debugLogging: 1
   showHintMaterial: 0
@@ -426,7 +428,7 @@ MonoBehaviour:
   space: 0
   cancelPhysicsWhileMoving: 1
   animate: 1
-  duration: 2.3
+  duration: 1.2
   ease: 0
   customCurve:
     serializedVersion: 2
@@ -484,6 +486,58 @@ MonoBehaviour:
   sceneAsset: {fileID: 102900000, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
   scenePath: Assets/Scenes/stage1.unity
   additive: 0
+--- !u!114 &91642078
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91642067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873a92953f85f46ff828089ce0e82b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.TransformAction
+  targetMode: 1
+  target: {fileID: 91642074}
+  modifyPosition: 1
+  position: {x: -163.948, y: -2.95, z: -26.12}
+  modifyRotation: 0
+  rotation: {x: 0, y: 0, z: 0}
+  modifyScale: 0
+  scale: {x: 1, y: 1, z: 1}
+  valueMode: 0
+  valueSource: 0
+  valueReference: {fileID: 0}
+  space: 0
+  cancelPhysicsWhileMoving: 1
+  animate: 1
+  duration: 2
+  ease: 0
+  customCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!43 &107169229
 Mesh:
   m_ObjectHideFlags: 0
@@ -2444,7 +2498,6 @@ GameObject:
   - component: {fileID: 486927788}
   - component: {fileID: 486927787}
   - component: {fileID: 486927793}
-  - component: {fileID: 486927792}
   - component: {fileID: 486927791}
   m_Layer: 0
   m_Name: keycard
@@ -2564,23 +2617,6 @@ MonoBehaviour:
   intValue: 0
   boolValue: 1
   stringValue: 
---- !u!114 &486927792
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 486927786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d3b5d98702ef49c6b82d0ca919ee87f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.InputCondition
-  Operator: 0
-  source: 0
-  key: 19
-  actionReference: {fileID: 0}
-  triggerOn: 0
 --- !u!114 &486927793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2593,8 +2629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a92f28de6ef04b69ab05194dfd044ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.ColliderEvent
-  conditions:
-  - {fileID: 486927792}
+  conditions: []
   actions:
   - {fileID: 486927791}
   exitActions: []
@@ -5131,8 +5166,8 @@ CapsuleCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.41
-  m_Height: 2
+  m_Radius: 0
+  m_Height: 0
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &1321655060
@@ -5306,7 +5341,6 @@ GameObject:
   - component: {fileID: 1471183597}
   - component: {fileID: 1471183596}
   - component: {fileID: 1471183595}
-  - component: {fileID: 1471183594}
   - component: {fileID: 1471183593}
   m_Layer: 0
   m_Name: activate_teleporter
@@ -5333,23 +5367,6 @@ MonoBehaviour:
   intValue: 0
   boolValue: 1
   stringValue: 
---- !u!114 &1471183594
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1471183592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d3b5d98702ef49c6b82d0ca919ee87f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.InputCondition
-  Operator: 0
-  source: 0
-  key: 19
-  actionReference: {fileID: 0}
-  triggerOn: 0
 --- !u!114 &1471183595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5362,8 +5379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a92f28de6ef04b69ab05194dfd044ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.ColliderEvent
-  conditions:
-  - {fileID: 1471183594}
+  conditions: []
   actions:
   - {fileID: 1471183593}
   exitActions: []
@@ -11454,7 +11470,6 @@ GameObject:
   - component: {fileID: 1927508863}
   - component: {fileID: 1927508862}
   - component: {fileID: 1927508861}
-  - component: {fileID: 1927508860}
   - component: {fileID: 1927508859}
   m_Layer: 0
   m_Name: Cube
@@ -11481,23 +11496,6 @@ MonoBehaviour:
   intValue: 0
   boolValue: 1
   stringValue: 
---- !u!114 &1927508860
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927508858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d3b5d98702ef49c6b82d0ca919ee87f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.InputCondition
-  Operator: 0
-  source: 0
-  key: 19
-  actionReference: {fileID: 0}
-  triggerOn: 0
 --- !u!114 &1927508861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11510,8 +11508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a92f28de6ef04b69ab05194dfd044ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.ColliderEvent
-  conditions:
-  - {fileID: 1927508860}
+  conditions: []
   actions:
   - {fileID: 1927508859}
   exitActions: []
@@ -26993,7 +26990,7 @@ Transform:
   m_GameObject: {fileID: 7094977339468497364}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.9994054, z: -0, w: -0.034480684}
-  m_LocalPosition: {x: -20.4, y: -7.05, z: -87.8}
+  m_LocalPosition: {x: -122.7, y: -9.7, z: -94.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
