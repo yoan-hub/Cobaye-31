@@ -5017,13 +5017,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544411810}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7051697, z: -0, w: 0.7090387}
-  m_LocalPosition: {x: 1.6152402, y: -1.8199999, z: -2.7812042}
+  m_LocalRotation: {x: -0, y: 0.06996748, z: -0, w: 0.9975493}
+  m_LocalPosition: {x: 3.6123579, y: -0.5899999, z: -111.71686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 678090666}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 97.711, z: 0}
 --- !u!114 &544411812
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5047,7 +5047,7 @@ MonoBehaviour:
   valueMode: 0
   valueSource: 0
   valueReference: {fileID: 0}
-  space: 1
+  space: 0
   cancelPhysicsWhileMoving: 1
   animate: 1
   duration: 3
@@ -5251,8 +5251,7 @@ Transform:
   m_LocalPosition: {x: 0.52, y: 1.23, z: -115.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 544411811}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -89.687, z: 0}
 --- !u!64 &678090667
@@ -26330,6 +26329,7 @@ GameObject:
   - component: {fileID: 1930692788}
   - component: {fileID: 1930692787}
   - component: {fileID: 1930692786}
+  - component: {fileID: 1930692794}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -26352,7 +26352,7 @@ MonoBehaviour:
   targetMode: 1
   target: {fileID: 678090666}
   modifyPosition: 1
-  position: {x: -161.98, y: 0.2415998, z: -26.38}
+  position: {x: 0.52, y: 1.23, z: -115.79}
   modifyRotation: 0
   rotation: {x: 0, y: 0, z: 0}
   modifyScale: 0
@@ -26363,7 +26363,7 @@ MonoBehaviour:
   space: 0
   cancelPhysicsWhileMoving: 1
   animate: 1
-  duration: 2.3
+  duration: 1.2
   ease: 0
   customCurve:
     serializedVersion: 2
@@ -26436,6 +26436,7 @@ MonoBehaviour:
   conditions: []
   actions:
   - {fileID: 1930692786}
+  - {fileID: 1930692794}
   exitActions:
   - {fileID: 1930692788}
   - {fileID: 1930692787}
@@ -26467,8 +26468,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 60.33, z: 1}
-  m_Center: {x: 0, y: 26.41, z: 0}
+  m_Size: {x: 1, y: 54.5, z: 1}
+  m_Center: {x: 0, y: 19.66, z: 0}
 --- !u!23 &1930692791
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26535,12 +26536,64 @@ Transform:
   m_GameObject: {fileID: 1930692785}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7051697, z: -0, w: 0.7090387}
-  m_LocalPosition: {x: 0.53, y: -1.86, z: -117.54}
+  m_LocalPosition: {x: 0.53, y: -1.74, z: -117.54}
   m_LocalScale: {x: 2.7836337, y: 0.019767, z: 4.85014}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -89.687, z: 0}
+--- !u!114 &1930692794
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930692785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873a92953f85f46ff828089ce0e82b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.TransformAction
+  targetMode: 1
+  target: {fileID: 0}
+  modifyPosition: 1
+  position: {x: 0.52, y: -2.8, z: -115.79}
+  modifyRotation: 0
+  rotation: {x: 0, y: 0, z: 0}
+  modifyScale: 0
+  scale: {x: 1, y: 1, z: 1}
+  valueMode: 0
+  valueSource: 0
+  valueReference: {fileID: 0}
+  space: 0
+  cancelPhysicsWhileMoving: 1
+  animate: 1
+  duration: 3
+  ease: 0
+  customCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2046472982
 GameObject:
   m_ObjectHideFlags: 0
@@ -27026,6 +27079,7 @@ SceneRoots:
   - {fileID: 2063107912}
   - {fileID: 703664777}
   - {fileID: 1628143224}
+  - {fileID: 544411811}
   - {fileID: 678090666}
   - {fileID: 1930692793}
   - {fileID: 1808525391}

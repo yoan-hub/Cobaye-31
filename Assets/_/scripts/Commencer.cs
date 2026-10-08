@@ -1,16 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Commencer : MonoBehaviour
+public class MonScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public string nomDeLaScene = "stage1";
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeLaScene()
     {
-        
+        SceneManager.LoadScene(nomDeLaScene);
     }
 }
