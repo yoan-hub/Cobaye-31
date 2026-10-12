@@ -9,22 +9,28 @@ EditorBuildSettings:
     path: Assets/Scenes/menu.unity
     guid: 549eca024da1d7e4c8a9cb7afe40afaa
   - enabled: 1
+    path: Assets/Scenes/salle-1.unity
+    guid: 26bfb538a58051c4491c659cd7fa21a8
+  - enabled: 1
+    path: Assets/Scenes/salle-2.unity
+    guid: f410b9b55fedce74b9e32f82bc2f99fd
+  - enabled: 1
     path: Assets/Scenes/salle-3.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/archive/stage2.unity
-    guid: 1627cb96178127c4ebd87e03b6b8312f
-  - enabled: 1
-    path: Assets/Scenes/stage3.unity
+    path: Assets/Scenes/salle-4(pass).unity
     guid: e87a1b8242cd08d4fac830f5a9f7089b
   - enabled: 1
-    path: Assets/Scenes/stage4-boss.unity
+    path: Assets/Scenes/salle-boss.unity
     guid: d1a9d15e66499f6448d68494c5523c6f
-  - enabled: 1
-    path: Assets/Scenes/win.unity
-    guid: 4ebd39688626fc945b995253551daeae
   - enabled: 1
     path: Assets/Scenes/lose.unity
     guid: 4194446ce9442364cb5a837f112d3f6d
+  - enabled: 1
+    path: Assets/Scenes/win.unity
+    guid: 4ebd39688626fc945b995253551daeae
+  - enabled: 0
+    path: Assets/Scenes/archive/stage2.unity
+    guid: 1627cb96178127c4ebd87e03b6b8312f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
