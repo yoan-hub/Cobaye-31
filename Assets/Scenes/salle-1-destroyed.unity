@@ -21101,7 +21101,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7b2453f023732f54c9b2f0abc78592c1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.216
+  m_Volume: 0.425
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -89771,7 +89771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 685433705554519169, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.6724498
+      value: 3.9039161
       objectReference: {fileID: 0}
     - target: {fileID: 685433705554519169, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       propertyPath: m_LocalScale.y
@@ -89779,7 +89779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 685433705554519169, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.9864482
+      value: 2.4129386
       objectReference: {fileID: 0}
     - target: {fileID: 685433705554519169, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       propertyPath: m_LocalPosition.x
@@ -101897,7 +101897,7 @@ MonoBehaviour:
   - {fileID: 1154745273}
   - {fileID: 1363078827}
   patrolSpeed: 2
-  chaseSpeed: 5
+  chaseSpeed: 5.5
   detectRange: 5
   catchTime: 1.5
   recoverTime: 0.2
