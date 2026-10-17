@@ -8707,7 +8707,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 150
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -74361,7 +74361,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: b66490078697b6d419a0ff5f6e87a662, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.03
+  m_Volume: 0.025
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -89791,7 +89791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 685433705554519169, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.716
+      value: 0.361
       objectReference: {fileID: 0}
     - target: {fileID: 685433705554519169, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
       propertyPath: m_LocalRotation.w
@@ -90336,6 +90336,7 @@ GameObject:
   - component: {fileID: 1464339460}
   - component: {fileID: 1464339459}
   - component: {fileID: 1464339458}
+  - component: {fileID: 1464339463}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -90548,6 +90549,22 @@ CharacterController:
   m_SkinWidth: 0.02
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0.93, z: 0}
+--- !u!114 &1464339463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464339456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ee5b726af5bd9548a0e6f9c77c2f2ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FootstepLoop
+  walkLoop: {fileID: 8300000, guid: ea6f4e67306dc7848826ad02cd97f579, type: 3}
+  volume: 0.855
+  normalSpeed: 6
+  speedMultiplier: 0.981
 --- !u!4 &1481110878 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3437740964661624762, guid: 76eb5fd062eb3df49b5c6e8b9f291f5a, type: 3}
@@ -101900,7 +101917,7 @@ MonoBehaviour:
   chaseSpeed: 5.5
   detectRange: 5
   catchTime: 1.5
-  recoverTime: 0.2
+  recoverTime: 0.1
   catchZone: {fileID: 1377699765}
   isInHiding: 0
   chasing: 0
@@ -102752,7 +102769,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: a89eb23fed639264a9a2c11adcc47d8f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.015
+  m_Volume: 0.051
   m_Pitch: 1
   Loop: 0
   Mute: 0
