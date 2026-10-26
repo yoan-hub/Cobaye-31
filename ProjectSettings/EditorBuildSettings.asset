@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/menu.unity
     guid: 549eca024da1d7e4c8a9cb7afe40afaa
   - enabled: 1
+    path: Assets/Scenes/salle1.unity
+    guid: 499971e0f8ea9c347ac8f3f83adfcb06
+  - enabled: 1
     path: Assets/Scenes/salle-1-destroyed.unity
     guid: 26bfb538a58051c4491c659cd7fa21a8
   - enabled: 1
