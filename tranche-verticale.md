@@ -1,5 +1,5 @@
 
-Éléments positifs:
+# Éléments positifs:
 
 Atmosphère générale très réussie (son + image + effets)
 Ce qui faut faire dans le jeu est clair.
@@ -12,7 +12,8 @@ L'ennemis est épeurant et fait bien son travail
 Atmosphère vraiment cool
 
 
-À améliorer:
+# À améliorer:
+
 Je trouve qu'il est difficile de savoir ce que la barre en haut veut dire, un icon pourrait t'aider mon grand
 peut être améliorer prérequis ou la difficulté, 
 le son est a améliorer j'entend que le menu et le son est très bas
