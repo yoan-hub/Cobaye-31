@@ -1,23 +1,23 @@
 
 # Éléments positifs:
 
-Atmosphère générale très réussie (son + image + effets)
-Ce qui faut faire dans le jeu est clair.
-Assets de qualité.
-insane assets
-vraiment nice comme environnement
-environnement  super, bon assets, créatif
-L'univers est insane Yoan! Yoan verse.
-L'ennemis est épeurant et fait bien son travail
-Atmosphère vraiment cool
+Atmosphère générale très réussie (son + image + effets) <br>
+Ce qui faut faire dans le jeu est clair. <br>
+Assets de qualité. <br>
+insane assets <br>
+vraiment nice comme environnement <br>
+environnement  super, bon assets, créatif <br>
+L'univers est insane Yoan! Yoan verse. <br>
+L'ennemis est épeurant et fait bien son travail <br>
+Atmosphère vraiment cool <br>
 
 
 # À améliorer:
 
-Je trouve qu'il est difficile de savoir ce que la barre en haut veut dire, un icon pourrait t'aider mon grand
-peut être améliorer prérequis ou la difficulté, 
-le son est a améliorer j'entend que le menu et le son est très bas
-Ça s'écrit "Ascenseur" et non "Acensseur". 
-J'arrive pas à terminer le niveau parce que c'est impossible d'esquiver le robot à la dernière étape.
-son est correct.
-niveau 01 un peut trop dur pour un niveau d'introduciton
+Je trouve qu'il est difficile de savoir ce que la barre en haut veut dire, un icon pourrait t'aider mon grand <br>
+peut être améliorer prérequis ou la difficulté, <br>
+le son est a améliorer j'entend que le menu et le son est très bas <br>
+Ça s'écrit "Ascenseur" et non "Acensseur".  <br>
+J'arrive pas à terminer le niveau parce que c'est impossible d'esquiver le robot à la dernière étape. <br>
+son est correct. <br>
+niveau 01 un peut trop dur pour un niveau d'introduciton <br>
