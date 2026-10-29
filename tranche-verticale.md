@@ -17,7 +17,7 @@ son est correct. <br>
 
 Je trouve qu'il est difficile de savoir ce que la barre en haut veut dire, un icon pourrait t'aider mon grand O <br> 
 peut être améliorer prérequis ou la difficulté, O <br> 
-le son est a améliorer j'entend que le menu et le son est très bas <br> X (baiser son du menu pour ajuster avec jeu) <br> 
+le son est a améliorer j'entend que le menu et le son est très bas X (baiser son du menu pour ajuster avec jeu) <br> 
 Ça s'écrit "Ascenseur" et non "Acensseur".  O <br> 
 J'arrive pas à terminer le niveau parce que c'est impossible d'esquiver le robot à la dernière étape. X <br> 
 niveau 01 un peut trop dur pour un niveau d'introduciton X <br> 
