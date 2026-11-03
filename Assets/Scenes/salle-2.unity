@@ -2807,7 +2807,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 2
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -11547,7 +11547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2518408748082297067, guid: 0c5ea83d3033c4b419264945864f758c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.71
+      value: -6.07
       objectReference: {fileID: 0}
     - target: {fileID: 2518408748082297067, guid: 0c5ea83d3033c4b419264945864f758c, type: 3}
       propertyPath: m_LocalPosition.z
