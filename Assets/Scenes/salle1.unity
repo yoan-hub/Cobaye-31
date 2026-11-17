@@ -795,31 +795,31 @@ MonoBehaviour:
   playerCamera: {fileID: 1586457473}
   steps:
   - message: {fileID: 1810046111}
-    duration: 4
+    duration: 7
     camera: {fileID: 1290143133}
   - message: {fileID: 1856939231}
-    duration: 5
+    duration: 7
     camera: {fileID: 1690492762}
   - message: {fileID: 879774318}
-    duration: 5
+    duration: 7
     camera: {fileID: 271443367}
   - message: {fileID: 1612001715}
-    duration: 5
+    duration: 7
     camera: {fileID: 1462783118}
   - message: {fileID: 472067448}
-    duration: 5
+    duration: 7
     camera: {fileID: 114433778}
   - message: {fileID: 1235383507}
-    duration: 5
+    duration: 7
     camera: {fileID: 1974242260}
   - message: {fileID: 1480695305}
-    duration: 5
+    duration: 7
     camera: {fileID: 679977628}
   textbox: {fileID: 573714681}
   freezeDuringSequence: []
   hideDuringSequence:
-  - {fileID: 1256658907}
   - {fileID: 510030342}
+  - {fileID: 1256658907}
   - {fileID: 2036780446}
   - {fileID: 1778346678}
   - {fileID: 909043327}
@@ -3556,7 +3556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -196, y: -122}
+  m_AnchoredPosition: {x: -196, y: -160}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &472067450
@@ -3579,8 +3579,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Le plus IMPORTANT!!! Ne te fait PAS attrapper par les robots et ne te raproche
-    pas trop de ces machines >:(
+  m_text: "Le plus IMPORTANT!!! Ne te fait PAS attrapper par ces machine, reste loin
+    d'elles. SAUTER aide \xE9norm\xE9ment tu peux aussi courrir, ces robots sont
+    stupides. >:("
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3607,8 +3608,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.4
-  m_fontSizeBase: 32.4
+  m_fontSize: 26.2
+  m_fontSizeBase: 26.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3646,7 +3647,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -273.04422, w: 0}
+  m_margin: {x: -20.012596, y: 0, z: -302.0489, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4887,7 +4888,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Raprochez vous de la fen\xEAtre \nwpour \xE9coputer un prisonniers"
+  m_text: "Raprochez vous de la fen\xEAtre \npour parler au prisonnier."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e2fb08a07dd435747a7bfac0b372a46f, type: 2}
   m_sharedMaterial: {fileID: -6983590294223874928, guid: e2fb08a07dd435747a7bfac0b372a46f, type: 2}
@@ -9728,7 +9729,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -196, y: -122}
+  m_AnchoredPosition: {x: -196, y: -133}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &879774320
@@ -9752,7 +9753,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Pour avancer, tu va devoir, ramasser des cl\xE9s, ouvrir des portes pis
-    hacker des terminals ;)"
+    hacker des terminals. (hehe)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9779,8 +9780,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33
-  m_fontSizeBase: 33
+  m_fontSize: 31
+  m_fontSizeBase: 31
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16913,7 +16914,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Si tu veux un secret, tu peut te cacher d\xE9rri\xE8re les grilles et
-    les machines vont arr\xEAter de te chasser et retourner en patrouille. ;)"
+    ces stupides machines vont arr\xEAter de te chasser et retourner en patrouille.
+    ;)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19584,7 +19586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -196, y: -185}
+  m_AnchoredPosition: {x: -196, y: -130}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1480695307
@@ -19607,7 +19609,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "J'te souhaite vraiment une bonne chance, je cr\xE9e un diversion tant\xF4t\n:D"
+  m_text: "Autre chose... d\xFB au test qu'on a subis, plus le temps avance, plus
+    on est vite... J'cr\xE9e un diversion tant\xF4t, bonne chance! \n:D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19634,8 +19637,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.4
-  m_fontSizeBase: 30.4
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -25540,7 +25543,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -196, y: -148}
+  m_AnchoredPosition: {x: -196, y: -141}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612001717
@@ -25564,7 +25567,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Des portes ou terminals pourrait \xEAtres bloqu\xE9s et requiert que tu
-    fasse autre chose, donc check ton HUD. \n:3"
+    fasse autre chose, donc check ton HUD et utilise ton cerveau... \n:3"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -25591,8 +25594,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.2
-  m_fontSizeBase: 28.2
+  m_fontSize: 26.4
+  m_fontSizeBase: 26.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -27180,7 +27183,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -210, y: -155}
+  m_AnchoredPosition: {x: -210, y: -137}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1810046113
@@ -27203,7 +27206,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Si tu veux t'\xE9chapper, \xE9coutes moi! \n>:)"
+  m_text: "YOOOO! Je suis un cobaye, come toi! Si tu veux t'\xE9chapper, \xE9coutes
+    moi...(ou pas)\n>:)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -27230,8 +27234,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 33.3
+  m_fontSizeBase: 33.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -27564,7 +27568,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -196, y: -143}
+  m_AnchoredPosition: {x: -196, y: -135}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1856939233
@@ -27587,7 +27591,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ce laboratoire est rempli de chambres cachant des objets...
+  m_text: Mon nom c'est...Jeremy. Whatever...ce laboratoire est rempli de chambres
+    cachant des objets... perso j'vais en voler. ;)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -27614,8 +27619,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30.5
+  m_fontSizeBase: 30.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
