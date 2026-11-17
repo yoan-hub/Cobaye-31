@@ -20,8 +20,36 @@ Retro PSX Horror Puzzle Item Pack - RetroGig <br>
 <br>
 
 ### Scripts <br>
-claude
+Claude
 
 <br>
 
-### Sons <br>
+### Sons et Musique <br>
+Error - u_31vnwfmzt6
+[https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-error-126627/]
+
+Error Notification 03 - Universfield <br>
+[https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-error-notification-03-125761/]
+
+Good! - syseQ (Freesound) <br>
+[https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-good-6081/]
+
+Nightmare Pulse - Horror Streaming GR - HorrorStreamingGR <br>
+[https://pixabay.com/fr/music/construire-des-sc%C3%A8nes-nightmare-pulse-horror-streaming-gr-411140/]
+
+fire - VanzetPictures <br>
+[https://pixabay.com/fr/sound-effects/nature-fire-457848/]
+
+Interface - Universfield <br>
+[https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-interface-124464/]
+
+Creepy Reality - AmarantaMusic  <br>
+[https://pixabay.com/fr/music/construire-des-sc%C3%A8nes-creepy-reality-112140/]
+
+Game_Over - u_em5pm2sfjd <br>
+[https://pixabay.com/fr/music/sc%C3%A8ne-dhorreur-game-over-560097/]
+
+Footsteps on Metal Floor - nate_asdfg (Freesound) <br>
+[https://pixabay.com/fr/sound-effects/m%C3%A9nage-footsteps-on-metal-floor-45788/]
+
+
