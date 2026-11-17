@@ -52,4 +52,28 @@ Game_Over - u_em5pm2sfjd <br>
 Footsteps on Metal Floor - nate_asdfg (Freesound) <br>
 [https://pixabay.com/fr/sound-effects/m%C3%A9nage-footsteps-on-metal-floor-45788/]
 
+Keycard accept - u_68csiaifb5 <br>
+[https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-keycard-accept-410380/]
+
+Dreamless - Lux-aeterna <br>
+[https://pixabay.com/fr/music/orchestral-dreamless-582530/]
+
+Brutal Space - AmarantaMusic
+[https://pixabay.com/fr/music/ambiant-brutal-space-112136/]
+
+Can Pickup - Crigence
+[https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-can-pickup-167810/]
+
+Sonido de luz de neon - u_g0akwz8ml1
+[https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-sonido-de-luz-de-neon-194458/]
+
+energy hum - firestorm185 (Freesound)
+[https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-energy-hum-29083/]
+
+Intense Cinematic Heartbeat Sound Effect - LensPulse
+[https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-intense-cinematic-heartbeat-sound-effect-584627/]
+
+Robot Breathing - JokerZillaGames
+[https://pixabay.com/fr/sound-effects/films-et-effets-sp%C3%A9ciaux-robot-breathing-366928/]
+
 
