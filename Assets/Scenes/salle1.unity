@@ -19631,7 +19631,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Autre chose... d\xFB au test qu'on a subis, plus le temps avance, plus
-    on est vite... J'cr\xE9e un diversion tant\xF4t, bonne chance! \n:D"
+    on est vite... J'cr\xE9e un diversion ce soir, bonne nuit! \n:D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -21122,7 +21122,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517942013}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03fea3d9941a6db46b119bca830c95ed, type: 3}
   m_Name: 
