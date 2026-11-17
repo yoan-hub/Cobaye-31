@@ -8,6 +8,8 @@ public class HidingZone : MonoBehaviour
     static int count;                                  // how many zones the player is inside
     public static bool playerHidden => count > 0;
 
+    public float fadeTime = 0.5f;   // fade in from black when you enter (0 = no fade)
+
     bool inside;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
@@ -20,6 +22,7 @@ public class HidingZone : MonoBehaviour
             inside = true;
             count++;
             PushToGuards();
+            if (fadeTime > 0f) ScreenFade.FadeInNow(fadeTime);
         }
     }
 
