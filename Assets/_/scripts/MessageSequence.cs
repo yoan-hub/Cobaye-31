@@ -52,8 +52,7 @@ public class MessageSequence : MonoBehaviour
         {
             if (s.camera != null && s.camera != current)
             {
-                current.enabled = false;
-                s.camera.enabled = true;
+                SwitchCamera(current, s.camera);
                 current = s.camera;
             }
 
@@ -65,8 +64,7 @@ public class MessageSequence : MonoBehaviour
         // back to the player
         if (current != playerCamera)
         {
-            current.enabled = false;
-            playerCamera.enabled = true;
+            SwitchCamera(current, playerCamera);
         }
 
         if (textbox != null) textbox.SetActive(false);
@@ -75,6 +73,21 @@ public class MessageSequence : MonoBehaviour
         if (freezeTime) Time.timeScale = 1f;
 
         running = false;
+    }
+
+    void SwitchCamera(Camera from, Camera to)
+    {
+        Debug.Log("MessageSequence: switching camera " + (from != null ? from.name : "none") + " -> " + to.name);
+
+        to.gameObject.SetActive(true);   // in case the whole camera object was switched off
+        to.enabled = true;
+        to.depth = 100f;                 // draws on top of any other camera that is still on
+        if (from != null && from != to)
+        {
+            from.enabled = false;
+            from.depth = 0f;
+            if (from != playerCamera) from.gameObject.SetActive(false);   // switched off again so its animation restarts next time
+        }
     }
 
     // Never leave the game frozen if this gets turned off / the scene reloads mid-sequence
