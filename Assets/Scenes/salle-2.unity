@@ -33381,8 +33381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
   operation: 0
-  sceneAsset: {fileID: 102900000, guid: 4194446ce9442364cb5a837f112d3f6d, type: 3}
-  scenePath: Assets/Scenes/lose.unity
+  sceneAsset: {fileID: 102900000, guid: 3f0bd60a915341e45ab64d81262e1292, type: 3}
+  scenePath: Assets/Scenes/perdre.unity
   additive: 0
 --- !u!114 &1035147492
 MonoBehaviour:
@@ -60395,8 +60395,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
   operation: 0
-  sceneAsset: {fileID: 102900000, guid: 4194446ce9442364cb5a837f112d3f6d, type: 3}
-  scenePath: Assets/Scenes/lose.unity
+  sceneAsset: {fileID: 102900000, guid: 3f0bd60a915341e45ab64d81262e1292, type: 3}
+  scenePath: Assets/Scenes/perdre.unity
   additive: 0
 --- !u!114 &1998233062
 MonoBehaviour:
