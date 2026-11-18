@@ -33,7 +33,10 @@ EditorBuildSettings:
     path: Assets/Scenes/perdre.unity
     guid: 3f0bd60a915341e45ab64d81262e1292
   - enabled: 1
-    path: Assets/Scenes/win.unity
+    path: Assets/Scenes/gagner.unity
+    guid: 3868ee7fead3b73448b0a742be9ef5dc
+  - enabled: 0
+    path: Assets/Scenes/archive/win.unity
     guid: 4ebd39688626fc945b995253551daeae
   - enabled: 0
     path: Assets/Scenes/archive/salle-4(pass)(CHANBGER EN ESCALIER).unity
