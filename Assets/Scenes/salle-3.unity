@@ -4810,7 +4810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
   operation: 0
   sceneAsset: {fileID: 102900000, guid: e87a1b8242cd08d4fac830f5a9f7089b, type: 3}
-  scenePath: Assets/Scenes/salle-4(pass)(CHANBGER EN ESCALIER).unity
+  scenePath: Assets/Scenes/archive/salle-4(pass)(CHANBGER EN ESCALIER).unity
   additive: 0
 --- !u!114 &1205050375
 MonoBehaviour:
