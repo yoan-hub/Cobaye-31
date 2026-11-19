@@ -624,6 +624,7 @@ GameObject:
   - component: {fileID: 60467769}
   - component: {fileID: 60467771}
   - component: {fileID: 60467772}
+  - component: {fileID: 60467773}
   m_Layer: 0
   m_Name: plate-elevator1
   m_TagString: Untagged
@@ -649,6 +650,7 @@ MonoBehaviour:
   - {fileID: 60467769}
   - {fileID: 60467771}
   exitActions:
+  - {fileID: 60467773}
   - {fileID: 60467772}
   holdTime: 0.5
   afterTrigger: 4
@@ -886,6 +888,21 @@ MonoBehaviour:
   targetMode: 1
   target: {fileID: 1804611465}
   operation: 0
+--- !u!114 &60467773
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60467759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275f95c71dc6d4da5b0b56be350fa878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.GameObjectAction
+  targetMode: 1
+  target: {fileID: 1642896225}
+  operation: 1
 --- !u!1001 &63898899
 PrefabInstance:
   m_ObjectHideFlags: 0
