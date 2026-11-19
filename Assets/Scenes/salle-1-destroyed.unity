@@ -620,11 +620,10 @@ GameObject:
   - component: {fileID: 60467766}
   - component: {fileID: 60467765}
   - component: {fileID: 60467764}
-  - component: {fileID: 60467763}
-  - component: {fileID: 60467762}
   - component: {fileID: 60467770}
   - component: {fileID: 60467769}
   - component: {fileID: 60467771}
+  - component: {fileID: 60467772}
   m_Layer: 0
   m_Name: plate-elevator1
   m_TagString: Untagged
@@ -632,38 +631,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &60467762
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60467759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2539c1a705247439d369eeb7e6769c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
-  operation: 0
-  sceneAsset: {fileID: 102900000, guid: f410b9b55fedce74b9e32f82bc2f99fd, type: 3}
-  scenePath: Assets/Scenes/salle-2.unity
-  additive: 0
---- !u!114 &60467763
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60467759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2539c1a705247439d369eeb7e6769c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
-  operation: 2
-  sceneAsset: {fileID: 102900000, guid: 26bfb538a58051c4491c659cd7fa21a8, type: 3}
-  scenePath: Assets/Scenes/salle-1-destroyed.unity
-  additive: 0
 --- !u!114 &60467764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,8 +649,7 @@ MonoBehaviour:
   - {fileID: 60467769}
   - {fileID: 60467771}
   exitActions:
-  - {fileID: 60467763}
-  - {fileID: 60467762}
+  - {fileID: 60467772}
   holdTime: 0.5
   afterTrigger: 4
   debugLogging: 1
@@ -904,6 +870,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.GameObjectAction
   targetMode: 1
   target: {fileID: 1313466101}
+  operation: 0
+--- !u!114 &60467772
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60467759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275f95c71dc6d4da5b0b56be350fa878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.GameObjectAction
+  targetMode: 1
+  target: {fileID: 1804611465}
   operation: 0
 --- !u!1001 &63898899
 PrefabInstance:
@@ -82126,7 +82107,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1.65, z: 1}
   m_Center: {x: 0, y: 0.76, z: 0}
@@ -97248,7 +97229,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trigger Cube
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 178535627725073038, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -97296,11 +97278,6 @@ MonoBehaviour:
   sceneAsset: {fileID: 102900000, guid: 26bfb538a58051c4491c659cd7fa21a8, type: 3}
   scenePath: Assets/Scenes/salle-1-destroyed.unity
   additive: 0
---- !u!65 &1377699765 stripped
-BoxCollider:
-  m_CorrespondingSourceObject: {fileID: 1912418967609095518, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
-  m_PrefabInstance: {fileID: 1377699756}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1379051483 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7943089749138282332, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
@@ -106382,6 +106359,58 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!1 &1804611465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1804611466}
+  - component: {fileID: 1804611467}
+  m_Layer: 0
+  m_Name: tonextlevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1804611466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804611465}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 856.374, y: 0, z: 1164.7528}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1804611467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804611465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb35123c4e0a5cf4fae1fa55f74c2545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneTransition
+  sceneName: salle-2
+  explosionSource: {fileID: 0}
+  explosionClip: {fileID: 0}
+  clipVolume: 1
+  holdBlack: 1.5
+  freezeDuringTransition: []
+  startWhenPlayerEnters: 0
+  startWhenTurnedOn: 1
 --- !u!4 &1806067055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5442704957377382785, guid: cedd13a3fd94a7d4981541765ada43dc, type: 3}
@@ -110369,8 +110398,9 @@ MonoBehaviour:
   chaseSpeed: 5.5
   detectRange: 5
   catchTime: 1.5
+  graceAfterHiding: 1
   recoverTime: 0.1
-  catchZone: {fileID: 1377699765}
+  loseScene: perdre
   isInHiding: 0
   chasing: 0
   danger: 0
@@ -111151,6 +111181,32 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 66069415}
   m_SourcePrefab: {fileID: 100100000, guid: 1d70f6daaadb94b568a178e5b96eca50, type: 3}
+--- !u!1 &2043243528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3247232891554661560, guid: 7e635f75d303e3542b40d6fa6c8a0d20, type: 3}
+  m_PrefabInstance: {fileID: 2095137005}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2043243531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043243528}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8022756, y: 1.6187221, z: 0.624947}
+  m_Center: {x: 5.145328, y: 0.809361, z: 0.0037899017}
 --- !u!4 &2046379222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3437740964661624762, guid: 76eb5fd062eb3df49b5c6e8b9f291f5a, type: 3}
@@ -111790,6 +111846,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SR_01_Scout_Bot
       objectReference: {fileID: 0}
+    - target: {fileID: 1238097899957163179, guid: 7e635f75d303e3542b40d6fa6c8a0d20, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2235163824054074662, guid: 7e635f75d303e3542b40d6fa6c8a0d20, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.074
@@ -111845,6 +111905,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7126827515937943401, guid: 7e635f75d303e3542b40d6fa6c8a0d20, type: 3}
       insertIndex: -1
       addedObject: {fileID: 353118662}
+    - targetCorrespondingSourceObject: {fileID: 3247232891554661560, guid: 7e635f75d303e3542b40d6fa6c8a0d20, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2043243531}
   m_SourcePrefab: {fileID: 100100000, guid: 7e635f75d303e3542b40d6fa6c8a0d20, type: 3}
 --- !u!1 &2098123923 stripped
 GameObject:
@@ -112249,3 +112312,4 @@ SceneRoots:
   - {fileID: 1056817774}
   - {fileID: 1187331219}
   - {fileID: 284537309}
+  - {fileID: 1804611466}

@@ -39,6 +39,13 @@ public class ScreenFade : MonoBehaviour
         if (instance != null) instance.Run(instance.Fade(1f, 0f, time));
     }
 
+    // Fades to black right now and stays black. Used by FadeOutTrigger (put it right before your Load Scene action).
+    public static void FadeOutNow()
+    {
+        if (instance != null) instance.Run(instance.Fade(instance.black.color.a, 1f, instance.fadeOutTime));
+        else Debug.LogWarning("ScreenFade: there is no ScreenFade in this scene, so there is nothing to fade. Add your fade Canvas.");
+    }
+
     // Hook this to a UI Button's OnClick, type the scene name in the box
     public void FadeAndLoad(string sceneName)
     {

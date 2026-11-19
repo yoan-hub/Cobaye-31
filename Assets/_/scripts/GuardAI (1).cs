@@ -1,29 +1,31 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
-// Needs: NavMeshAgent, Rigidbody (Is Kinematic ON, Use Gravity OFF), 1+ waypoints.
-// The Trigger Cube is now only the "caught" zone. Spotting the player uses detectRange.
+// Needs: NavMeshAgent, Rigidbody (Is Kinematic ON, Use Gravity OFF), 1+ waypoints,
+// and a Trigger Cube (Is Trigger) as a child = the "caught" zone.
+// Delete / untick the Game Creator "Collider Event" on the Trigger Cube: this script now handles the catch.
 public class GuardAI : MonoBehaviour
 {
     public Transform[] waypoints;
     public float patrolSpeed = 2f;
     public float chaseSpeed = 4.5f;
-    public float detectRange = 8f;    // how far away the guard notices you (needs a clear line of sight)
-    public float catchTime = 1.3f;    // keep the same as Hold Time on the Collider Event
-    public float recoverTime = 1f;    // seconds for the bar to drain after you escape/hide
+    public float detectRange = 8f;          // how far away the guard notices you (needs a clear line of sight)
+    public float catchTime = 1.3f;          // seconds inside the catch zone, while he chases you, before you lose
+    public float graceAfterHiding = 1.5f;   // after you leave a hiding spot, he can't spot or catch you for this long
+    public float recoverTime = 1f;          // seconds for the bar to drain after you escape/hide
+    public string loseScene = "loser";      // scene loaded when you are caught
 
-    public Collider catchZone;        // drag the Trigger Cube here: it (and its scripts, like the Collider Event) get switched off while you hide
-
-    public bool isInHiding;           // set by HidingZone
+    public bool isInHiding;                 // filled in automatically from HidingZone (just for you to see)
     public bool chasing;
-    [Range(0f, 1f)] public float danger;   // 0 = safe, 1 = caught (read by the progress bar)
+    [Range(0f, 1f)] public float danger;    // 0 = safe, 1 = caught (also drives the progress bar)
 
     NavMeshAgent agent;
     Transform player;
     int index;
     float lastInZone = -10f;
-    MonoBehaviour[] catchScripts;
-    bool catchActive = true;   // switched off on the first frame (not chasing yet)
+    float graceUntil;
+    bool caught;
 
     void Start()
     {
@@ -31,19 +33,19 @@ public class GuardAI : MonoBehaviour
         agent.speed = patrolSpeed;
         agent.SetDestination(waypoints[index].position);
 
-        if (catchZone != null) catchScripts = catchZone.GetComponents<MonoBehaviour>();
-
         GameObject p = GameObject.FindGameObjectWithTag("Player");
         if (p != null) player = p.transform;
     }
 
     void Update()
     {
-        // can only be caught while he is chasing you, and never while you hide
-        bool canCatch = chasing && !isInHiding;
-        if (catchZone != null && catchActive != canCatch) SetCatchActive(canCatch);
+        if (caught) return;
+
+        isInHiding = HidingZone.playerHidden;   // set by the hiding zones, same for every robot
+        if (isInHiding) graceUntil = Time.time + graceAfterHiding;   // restarts the grace period while you hide
 
         UpdateDanger();
+        if (caught) return;
 
         if (!chasing && CanSee())
         {
@@ -54,18 +56,10 @@ public class GuardAI : MonoBehaviour
         if (chasing) Chase(); else Patrol();
     }
 
-    // Switches the Trigger Cube's collider AND its scripts (Collider Event) on/off
-    void SetCatchActive(bool on)
-    {
-        catchActive = on;
-        catchZone.enabled = on;
-        foreach (MonoBehaviour m in catchScripts) m.enabled = on;
-    }
-
-    // Close enough + nothing in the way + not hiding
+    // Close enough + nothing in the way + not hiding + not in the grace period
     bool CanSee()
     {
-        if (player == null || isInHiding) return false;
+        if (player == null || isInHiding || Time.time < graceUntil) return false;
         if (Vector3.Distance(transform.position, player.position) > detectRange) return false;
 
         Vector3 eyes = transform.position + Vector3.up;
@@ -77,13 +71,27 @@ public class GuardAI : MonoBehaviour
         return false;
     }
 
+    // The ONLY clock: fills while you stand in the catch zone, drains otherwise. Full = you lose.
     void UpdateDanger()
     {
         bool inCatchZone = Time.time - lastInZone < 0.1f;
-        bool threatened = inCatchZone && chasing && !isInHiding;
+        bool threatened = inCatchZone && chasing && !isInHiding && Time.time >= graceUntil;
 
         float rate = threatened ? 1f / catchTime : -1f / recoverTime;
         danger = Mathf.Clamp01(danger + rate * Time.deltaTime);
+
+        if (danger >= 1f) Catch();
+    }
+
+    void Catch()
+    {
+        caught = true;
+        agent.isStopped = true;
+        Debug.Log("GuardAI: " + name + " caught the player in " + SceneManager.GetActiveScene().name);
+
+        ScreenFade fade = FindFirstObjectByType<ScreenFade>();
+        if (fade != null) fade.FadeAndLoad(loseScene, 0.2f);
+        else SceneManager.LoadScene(loseScene);
     }
 
     void Patrol()
@@ -110,7 +118,7 @@ public class GuardAI : MonoBehaviour
         agent.SetDestination(player.position);
     }
 
-    // The Trigger Cube (and bot's own trigger) = the "caught" zone
+    // The Trigger Cube (and the bot's own trigger) = the "caught" zone
     void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player")) lastInZone = Time.time;

@@ -4251,6 +4251,58 @@ Transform:
   - {fileID: 628553161}
   m_Father: {fileID: 1183804510}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &560693844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 560693846}
+  - component: {fileID: 560693845}
+  m_Layer: 0
+  m_Name: tonextlevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &560693845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560693844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb35123c4e0a5cf4fae1fa55f74c2545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneTransition
+  sceneName: salle-1-destroyed
+  explosionSource: {fileID: 0}
+  explosionClip: {fileID: 0}
+  clipVolume: 1
+  holdBlack: 1.5
+  freezeDuringTransition: []
+  startWhenPlayerEnters: 0
+  startWhenTurnedOn: 1
+--- !u!4 &560693846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560693844}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 856.374, y: 0, z: 1164.7528}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &572876847
 Mesh:
   m_ObjectHideFlags: 0
@@ -6083,16 +6135,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4613362951003637225, guid: daa09928c71d146cc9f3438b2ffdb0c3, type: 3}
       propertyPath: actions.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4613362951003637225, guid: daa09928c71d146cc9f3438b2ffdb0c3, type: 3}
       propertyPath: 'actions.Array.data[0]'
       value: 
-      objectReference: {fileID: 2087163951}
+      objectReference: {fileID: 2087163954}
     - target: {fileID: 4613362951003637225, guid: daa09928c71d146cc9f3438b2ffdb0c3, type: 3}
       propertyPath: 'actions.Array.data[1]'
       value: 
-      objectReference: {fileID: 2087163950}
+      objectReference: {fileID: 0}
     - target: {fileID: 4613362951003637225, guid: daa09928c71d146cc9f3438b2ffdb0c3, type: 3}
       propertyPath: conditions.Array.size
       value: 2
@@ -6181,10 +6233,7 @@ PrefabInstance:
       addedObject: {fileID: 2087163952}
     - targetCorrespondingSourceObject: {fileID: 7553348629099787411, guid: daa09928c71d146cc9f3438b2ffdb0c3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2087163951}
-    - targetCorrespondingSourceObject: {fileID: 7553348629099787411, guid: daa09928c71d146cc9f3438b2ffdb0c3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2087163950}
+      addedObject: {fileID: 2087163954}
   m_SourcePrefab: {fileID: 100100000, guid: daa09928c71d146cc9f3438b2ffdb0c3, type: 3}
 --- !u!4 &700686695 stripped
 Transform:
@@ -17753,8 +17802,9 @@ MonoBehaviour:
   chaseSpeed: 4.5
   detectRange: 0.0001
   catchTime: 1.3
+  graceAfterHiding: 1.5
   recoverTime: 1
-  catchZone: {fileID: 0}
+  loseScene: loser
   isInHiding: 0
   chasing: 0
   danger: 0
@@ -18386,7 +18436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
   operation: 0
   sceneAsset: {fileID: 102900000, guid: 4194446ce9442364cb5a837f112d3f6d, type: 3}
-  scenePath: Assets/Scenes/lose.unity
+  scenePath: Assets/Scenes/archive/lose.unity
   additive: 0
 --- !u!114 &1376636042
 MonoBehaviour:
@@ -29906,38 +29956,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7553348629099787411, guid: daa09928c71d146cc9f3438b2ffdb0c3, type: 3}
   m_PrefabInstance: {fileID: 693251182}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2087163950
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2087163949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2539c1a705247439d369eeb7e6769c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
-  operation: 0
-  sceneAsset: {fileID: 102900000, guid: 26bfb538a58051c4491c659cd7fa21a8, type: 3}
-  scenePath: Assets/Scenes/salle-1-destroyed.unity
-  additive: 0
---- !u!114 &2087163951
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2087163949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2539c1a705247439d369eeb7e6769c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.SceneAction
-  operation: 2
-  sceneAsset: {fileID: 102900000, guid: 499971e0f8ea9c347ac8f3f83adfcb06, type: 3}
-  scenePath: Assets/Scenes/salle1.unity
-  additive: 0
 --- !u!114 &2087163952
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -29975,6 +29993,21 @@ MonoBehaviour:
   key: 19
   actionReference: {fileID: 0}
   triggerOn: 0
+--- !u!114 &2087163954
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087163949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275f95c71dc6d4da5b0b56be350fa878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ColliderEventSystem::ColliderEventSystem.GameObjectAction
+  targetMode: 1
+  target: {fileID: 560693844}
+  operation: 0
 --- !u!4 &2087392679 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2095686348500792363, guid: 4ca0efddd7500bd4db3b505449e942b0, type: 3}
@@ -30317,3 +30350,4 @@ SceneRoots:
   - {fileID: 693251182}
   - {fileID: 732478279}
   - {fileID: 2084189105}
+  - {fileID: 560693846}

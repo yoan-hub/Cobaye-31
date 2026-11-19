@@ -47,6 +47,7 @@ public class SceneTransition : MonoBehaviour
         // 1. fade to black
         ScreenFade fade = FindFirstObjectByType<ScreenFade>();
         if (fade != null) yield return fade.FadeOutRoutine();
+        else Debug.LogWarning("SceneTransition: there is no ScreenFade in this scene, so there is nothing to fade. Add your fade Canvas.");
 
         // 2. explosion while it's black
         if (explosionSource != null)
