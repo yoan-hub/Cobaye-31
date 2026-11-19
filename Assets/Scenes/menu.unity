@@ -1477,7 +1477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScreenFade
   black: {fileID: 1482160164}
-  fadeInTime: 1.5
+  fadeInTime: 0.9
   fadeOutTime: 1
   fadeInOnStart: 1
   startDelay: 0.4
